@@ -1,1 +1,2 @@
-export declare function sum(a: number, b: number): number;
+import MyComponent from './components/MyComponent';
+export { MyComponent };

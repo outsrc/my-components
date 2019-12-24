@@ -16,7 +16,11 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^24.0.24",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
     "jest": "^24.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "rollup": "^1.27.13",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
@@ -26,6 +30,10 @@
     "standard-prettier": "^1.0.1",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.3"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16"
   },
   "jest": {
     "preset": "ts-jest",

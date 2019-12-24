@@ -2,7 +2,9 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-function sum(a, b) { return a + b; }
+var React = require('react');
 
-exports.sum = sum;
+var MyComponent = function () { return (React.createElement("div", null, "My First Component")); };
+
+exports.MyComponent = MyComponent;
 //# sourceMappingURL=index.js.map
