@@ -1,0 +1,31 @@
+import {Meta, Story, Preview, Props} from '@storybook/addon-docs/blocks'
+
+import { MyComponent, MyComponentProps } from './MyComponent'
+
+<Meta title="Components/MyComponent" component={MyComponent} />
+
+# MyComponent
+
+This is the `MyComponent`
+
+```jsx
+import { MyComponent } from 'my-components'
+```
+
+<Preview withSource="open">
+  <Story name="MyComponent">
+    <MyComponent name='John' />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={MyComponent} />
+
+## Using different Prop Name
+
+<Preview withSource="open">
+  <Story name="Different Prop Name">
+    <MyComponent name='Frances' />
+  </Story>
+</Preview>

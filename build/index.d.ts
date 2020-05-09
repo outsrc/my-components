@@ -1,2 +1,1 @@
-import MyComponent from './components/MyComponent';
-export { MyComponent };
+export * from './components/MyComponent';
