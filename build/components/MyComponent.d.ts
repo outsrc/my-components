@@ -1,5 +1,6 @@
 import * as React from 'react';
-interface Props {
+interface MyComponentProps {
+    name: string;
 }
-declare const MyComponent: React.FunctionComponent<Props>;
-export default MyComponent;
+export declare const MyComponent: React.FC<MyComponentProps>;
+export {};
