@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots my components/MyComponent Regular 1`] = `
+<div
+  aria-level={1}
+  role="heading"
+>
+  My First Component: 
+  This is a MyComponent
+</div>
+`;

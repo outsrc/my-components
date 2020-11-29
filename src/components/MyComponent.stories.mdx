@@ -1,31 +1,20 @@
-import {Meta, Story, Preview, Props} from '@storybook/addon-docs/blocks'
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
+import { MyComponent } from './MyComponent'
 
-import { MyComponent, MyComponentProps } from './MyComponent'
-
-<Meta title="Components/MyComponent" component={MyComponent} />
+<Meta title='my components/MyComponent' component={MyComponent} />
 
 # MyComponent
 
-This is the `MyComponent`
+With `MDX` we can define a story for `MyComponent` right in the middle of our
+Markdown documentation.
 
-```jsx
-import { MyComponent } from 'my-components'
-```
-
-<Preview withSource="open">
-  <Story name="MyComponent">
-    <MyComponent name='John' />
+<Canvas>
+  <Story
+    name='Regular'
+    args={{
+      name: 'This is a MyComponent'
+    }}
+  >
+    {args => <MyComponent {...args} />}
   </Story>
-</Preview>
-
-## Props
-
-<Props of={MyComponent} />
-
-## Using different Prop Name
-
-<Preview withSource="open">
-  <Story name="Different Prop Name">
-    <MyComponent name='Frances' />
-  </Story>
-</Preview>
+</Canvas>
